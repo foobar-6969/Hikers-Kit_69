@@ -51,8 +51,9 @@ void loop() {
   temperature = bmp.readTemperature();
   altitude = bmp.readAltitude();
   int i = dht_read(DHT_PIN);
-  humidity = dht_humidity;
-  
+  if(i == 0){
+    humidity = dht_humidity;
+  }
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
@@ -95,6 +96,5 @@ float measure_lux(int ldr_pin){
   float lux;
   int LDR_val = analogRead(ldr_pin);
   lux = (250.0/(LDR_val*ADC_RES))-50.0;
-  Serial.println(lux);
   return lux;
 }
