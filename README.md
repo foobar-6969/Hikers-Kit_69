@@ -24,4 +24,4 @@ This project is about a mini weather station or rather a hiker's kit made for hi
 Circuit diagram is provided in circuit.png
 
 # NOTE:-
-To replicate this the circuit should be main. dht.h and main.ino should be in the same folder and main.ino should be uploaded in the miceocontroller .
+To replicate this the project dht.h and main.ino should be in the same folder and main.ino should be uploaded in the miceocontroller .
